@@ -18,6 +18,17 @@
         <li>username: anonymous</li>
         <li>only download, no upload</li>
     </ul>
+
+    <h2>Say something!</h2>
+    <form action="/api/submit" method="get">
+        <label for="author">Author:</label><input type="text" id="author" name="author">
+        <label>
+            Comment:
+            <textarea id="comment" name="comment"></textarea>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+
     <script src="./static/moo.js"></script>
 </body>
 </html>

@@ -27,6 +27,7 @@ html, body {
 
 #container {
     padding: 36px;
+    width: 100%;
 }
 
 #mylove, #moobutton {
@@ -37,6 +38,25 @@ textarea, input {
     vertical-align: top;
     margin: 1px;
     padding: 1px;
+}
+
+/* proper upscale */
+.nn {
+    image-rendering: pixelated;
+}
+
+.lovetitle {
+    display: inline-block;
+}
+
+.flr {
+    vertical-align: bottom;
+}
+
+/* Centre the fucking title already */
+.title {
+    margin: auto;
+    text-align: center;
 }
 
 /* Add a black background color to the top navigation */

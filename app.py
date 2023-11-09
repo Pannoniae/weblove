@@ -6,8 +6,12 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():  # put application's code here
+def main():
     return flask.render_template('index.html')
+
+@app.route('/about')
+def about():
+    return flask.render_template('about.html')
 
 
 @app.route('/api/submit', methods=['GET'])

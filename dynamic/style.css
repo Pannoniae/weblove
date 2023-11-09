@@ -38,3 +38,31 @@ textarea, input {
     margin: 1px;
     padding: 1px;
 }
+
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #222D;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #ddf; /* slight blue bias */
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+    background-color: #9370DBDD;
+    color: white;
+}

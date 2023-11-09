@@ -1,47 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/jpeg" href="cow.jpg">
-    <link rel="stylesheet" lazyload href="./dynamic/style.css">
-    <title>0x appreciation</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Pannoniae's website, dedicated to 0xb8000 appreciation.">
-</head>
-<body>
-    {#    <img src="https://www.openttd.org/static/img/teaser/2.png" style="margin: auto; display: block">#}
-    <div id="page">
-        <div id="container">
-            <h1>Welcome!</h1>
-            <p>Website very much under construction, hehe <3</p>
-            <br>
-            <figure id="mylove">
-                <img src="cow.webp" alt="0x's awesomeness" width="150px" height="141px">
-                <figcaption>0x is the greatest <3</figcaption>
-            </figure>
-            <button id="moobutton">Click me!</button>
-            <br>
-            <br>
-            <h2>FTP credentials:</h2>
-            <ul>
-                <li>Host: pannoniae.net</li>
-                <li>username: anonymous</li>
-                <li>only download, no upload</li>
-            </ul>
+{% extends "base.html" %}
+{% block navhome %}active{% endblock %}
+{% block body %}
+    <body>
 
-            <h2>Tell 0x how much you appreciate them!</h2>
-            <p>I promise, I'll forward every nice word:)</p>
-            <form action="/api/submit" method="get">
-                <label for="author">Author:</label><input type="text" id="author" name="author">
-                <label>
-                    Nice words:
-                    <textarea id="comment" name="comment"></textarea>
-                </label>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
+        <h1>Welcome!</h1>
+        <p>Website very much under construction, hehe <3</p>
+        <br>
+        <figure id="mylove">
+            <img src="cow.webp" alt="0x's awesomeness" width="150px" height="141px">
+            <figcaption>0x is the greatest <3</figcaption>
+        </figure>
+        <button id="moobutton">Click me!</button>
+        <br>
+        <br>
+        <h2>FTP credentials:</h2>
+        <ul>
+            <li>Host: pannoniae.net</li>
+            <li>username: anonymous</li>
+            <li>only download, no upload</li>
+        </ul>
 
-    <script src="./dynamic/moo.js" async></script>
-</body>
-</html>
+        <h2>Tell 0x how much you appreciate them!</h2>
+        <p>I promise, I'll forward every nice word:)</p>
+        <form action="/api/submit" method="get">
+            <label for="author">Author:</label><input type="text" id="author" name="author">
+            <label>
+                Nice words:
+                <textarea id="comment" name="comment"></textarea>
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script src="./dynamic/moo.js" async></script>
+    </body>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Pannoniae's website, dedicated to 0xb8000 appreciation.">
+        <link rel="stylesheet" lazyload href="./dynamic/style.css">
+        <link rel="icon" type="image/jpeg" href="cow.webp">
+        <title>0x appreciation</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="page">
+        <div id="container">
+            <div class="nav">
+                <a class="{% block navhome %}{% endblock %}" href="/">Home</a>
+                <a class="{% block navabout %}{% endblock %}" href="/about">About</a>
+            </div>
+
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

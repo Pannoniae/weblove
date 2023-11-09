@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/jpeg" href="cow.jpg">
-    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" lazyload href="./dynamic/style.css">
     <title>0x appreciation</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Pannoniae's website, dedicated to 0xb8000 appreciation.">
 </head>
 <body>
     {#    <img src="https://www.openttd.org/static/img/teaser/2.png" style="margin: auto; display: block">#}
@@ -14,7 +16,7 @@
             <p>Website very much under construction, hehe <3</p>
             <br>
             <figure id="mylove">
-                <img src="cow.jpg" alt="0x's awesomeness" width="150px" height="150px">
+                <img src="cow.webp" alt="0x's awesomeness" width="150px" height="141px">
                 <figcaption>0x is the greatest <3</figcaption>
             </figure>
             <button id="moobutton">Click me!</button>
@@ -27,11 +29,12 @@
                 <li>only download, no upload</li>
             </ul>
 
-            <h2>Say something!</h2>
+            <h2>Tell 0x how much you appreciate them!</h2>
+            <p>I promise, I'll forward every nice word:)</p>
             <form action="/api/submit" method="get">
                 <label for="author">Author:</label><input type="text" id="author" name="author">
                 <label>
-                    Comment:
+                    Nice words:
                     <textarea id="comment" name="comment"></textarea>
                 </label>
                 <input type="submit" value="Submit">
@@ -39,6 +42,6 @@
         </div>
     </div>
 
-    <script src="./static/moo.js"></script>
+    <script src="./dynamic/moo.js" async></script>
 </body>
 </html>

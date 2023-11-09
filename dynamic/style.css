@@ -1,13 +1,14 @@
 body {
-    background-color: #837960;
     background-image: linear-gradient(
             to bottom, transparent, #FFFFFF66
-    ), url("background.webp");
-    background-repeat: no-repeat;
+    ), url("../static/background.webp");
+    background-color: #779263;
+    background-repeat: round;
     background-attachment: fixed;
 }
 
 html, body {
+    font-family: "Source Sans Pro", serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -30,4 +31,10 @@ html, body {
 
 #mylove, #moobutton {
     margin-left: 24px;
+}
+
+textarea, input {
+    vertical-align: top;
+    margin: 1px;
+    padding: 1px;
 }

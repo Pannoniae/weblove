@@ -1,0 +1,33 @@
+body {
+    background-color: #837960;
+    background-image: linear-gradient(
+            to bottom, transparent, #FFFFFF66
+    ), url("background.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+}
+
+#page {
+    margin: 36px auto 36px auto;
+    display: flex;
+    width: 800px;
+    background-color: #FFDDFFDD;
+    height: 100%;
+}
+
+#container {
+    padding: 36px;
+}
+
+#mylove, #moobutton {
+    margin-left: 24px;
+}

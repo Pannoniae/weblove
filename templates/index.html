@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/jpeg" href="cow.jpg">
+    <link rel="stylesheet" href="./static/style.css">
     <title>0x appreciation</title>
 </head>
 <body>
-    0x is the greatest <3
-    <br>
-    <img src="cow.jpg" width="150px" height="150px">
-    <button id="moobutton">Click me!</button>
-    <br>
-    <br>
-    <h2>FTP credentials:</h2>
-    <ul>
-        <li>Host: pannoniae.net</li>
-        <li>username: anonymous</li>
-        <li>only download, no upload</li>
-    </ul>
+    {#    <img src="https://www.openttd.org/static/img/teaser/2.png" style="margin: auto; display: block">#}
+    <div id="page">
+        <div id="container">
+            <h1>Welcome!</h1>
+            <p>Website very much under construction, hehe <3</p>
+            <br>
+            <figure id="mylove">
+                <img src="cow.jpg" alt="0x's awesomeness" width="150px" height="150px">
+                <figcaption>0x is the greatest <3</figcaption>
+            </figure>
+            <button id="moobutton">Click me!</button>
+            <br>
+            <br>
+            <h2>FTP credentials:</h2>
+            <ul>
+                <li>Host: pannoniae.net</li>
+                <li>username: anonymous</li>
+                <li>only download, no upload</li>
+            </ul>
 
-    <h2>Say something!</h2>
-    <form action="/api/submit" method="get">
-        <label for="author">Author:</label><input type="text" id="author" name="author">
-        <label>
-            Comment:
-            <textarea id="comment" name="comment"></textarea>
-        </label>
-        <input type="submit" value="Submit">
-    </form>
+            <h2>Say something!</h2>
+            <form action="/api/submit" method="get">
+                <label for="author">Author:</label><input type="text" id="author" name="author">
+                <label>
+                    Comment:
+                    <textarea id="comment" name="comment"></textarea>
+                </label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 
     <script src="./static/moo.js"></script>
 </body>

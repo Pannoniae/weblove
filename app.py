@@ -9,6 +9,14 @@ app = Flask(__name__)
 def main():
     return flask.render_template('index.html')
 
+@app.route('/human')
+def human():
+    return "<3"
+
+@app.route('/0x')
+def mylove():
+    return flask.render_template('0x.html')
+
 @app.route('/about')
 def about():
     return flask.render_template('about.html')
